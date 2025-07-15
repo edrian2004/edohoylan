@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects | Edrian Ohoylan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      position: relative;
+    }
+    .navbar {
+  transition: background-color 0.3s ease-in-out;
+}
+.navbar.transparent {
+  background-color: transparent;
+}
+.navbar.solid {
+  background-color: #000;
+}
+.navbar-nav .nav-link.active {
+  border-bottom: 2px solid #fff;
+}
+
+    .line {
+      width: 40px;
+      height: 3px;
+      background-color: #000;
+      margin: 10px auto;
+      border-radius: 10px;
+    }
+    .card {
+      background-color: #1e1e1e;
+      border: 1px solid #fff;
+      color: #fff;
+    }
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      background: #000;
+      color: #f1f1f1;
+      text-align: center;
+    }
+    .line {
+  width: 40px;
+  height: 3px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+#web-projects, #graphic-design-projects {
+  scroll-margin-top: 100px;
+}
+
+
+  </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#projectNavbar" data-bs-offset="70" tabindex="0">
+
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top transparent" id="projectNavbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Edfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Go Back</a></li>
+        <li class="nav-item"><a class="nav-link" href="#web-projects">Web Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#graphic-design-projects">Graphic Design Projects</a>
+</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div id="top"></div>
+
+<!-- Web Projects Section -->
+<section id="web-projects" class="container mt-5 pt-5">
+  <div class="text-center mb-4">
+    <h2 class="fw-bold">Web Projects</h2>
+    <div class="line"></div>
+  </div>
+
+  <div class="row g-4">
+    <!-- Example Web Project Card -->
+    <div class="col-md-3">
+      <div class="card">
+        <img src="project1.png" class="card-img-top" alt="Barangay System">
+        <div class="card-body">
+          <h5 class="card-title">Barangay Reporting System</h5>
+          <p class="card-text">A web-based complaint and request management system for Barangay using PHP, MySQL, and Bootstrap.</p>
+          <a href="https://l.facebook.com/l.php?u=http%3A%2F%2Fbarangaysystem.atwebpages.com%2F%3Ffbclid%3DIwZXh0bgNhZW0CMTEAAR7T2NXH-ZnICRnXksTkce6TXIX1ablJyyOLCDpuc3iFP9wc8I7K9RDmNhSAUw_aem_d3Vi5rwK8K5w40w8QSMgAw&h=AT3kHXb1D3HHd28UMtF0zrzAwCcWBqCuAOn_qg2F3jnYVJzH9N5Pv1wlBiUClBCYmt60SoUDyaS8zaoTBaM16CcbBegovwD13R3QyZe6sg4_iTClKUA3CYX1GmHG4uo&s=1" target="_blank" class="btn btn-outline-light">Visit Site</a>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat for other web projects -->
+  </div>
+</section>
+
+<!-- GRAPHIC DESIGN PROJECTS SECTION -->
+<section id="graphic-design-projects" class="container mt-5 pt-5">
+  <div class="text-center mb-4">
+    <h2 class="fw-bold">Graphic Design Projects</h2>
+    <div class="line mx-auto mb-4"></div>
+  </div>
+
+  <div class="row g-4">
+
+    <!-- Cebu Magazine Card -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card bg-dark text-light h-100">
+        <img src="Magazine cover project.jpg" class="card-img-top" alt="Cebu Magazine" style="height: 400px; object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title">Cebu Travel Magazine</h5>
+          <p class="card-text">A travel magazine I created, featuring iconic tourist destinations in Cebu City, designed and published for digital reading.</p>
+          <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#cebuModal">View Magazine</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Branding / Advertising Works Card -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card bg-dark text-light h-100">
+        <img src="2.jpg" class="card-img-top" alt="Other Graphic Projects" style="height: 400px; object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title">Branding & Advertising Works</h5>
+          <p class="card-text">A collection of logos, brand identities, marketing creatives, and social media ads I’ve produced for various projects.</p>
+          <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#brandingModal">View Image</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- Cebu Magazine Modal -->
+<div class="modal fade" id="cebuModal" tabindex="-1" aria-labelledby="cebuModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="brandingModalLabel">Cebu Travel Magazine</h5>
+        <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body d-flex justify-content-center align-items-center p-3">
+        <img src="Magazine cover project.jpg" class="img-fluid rounded" alt="Cebu Magazine" style="max-height: 85vh; object-fit: contain;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Branding & Advertising Works Modal -->
+<div class="modal fade" id="brandingModal" tabindex="-1" aria-labelledby="brandingModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark text-light">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="brandingModalLabel">Branding & Advertising Works</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0">
+        <img src="2.jpg" class="img-fluid rounded" alt="Graphic Works">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer>
+  &copy; 2025 Edrian Ohoylan | All Rights Reserved
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<script>
+
+window.addEventListener("scroll", function() {
+  const navbar = document.querySelector(".navbar");
+  if (window.scrollY > 50) {
+    navbar.classList.remove("transparent");
+    navbar.classList.add("solid");
+  } else {
+    navbar.classList.add("transparent");
+    navbar.classList.remove("solid");
+  }
+});
+
+
+
+</script>
+</html>
